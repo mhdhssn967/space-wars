@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Alien Wars</title>
+</head>
+<body>
+    <div class="space">
+        <div class="inst">
+           <div class="start" id="start">
+                <img src="./Assets/Spw.png" alt="" class="bg3">
+                <h2>Instructions</h2>
+                <h3>Use Mouse to move your spaceship</h3>
+                <h3>Use Space key to shoot other spaceships</h3>
+                <h3>Your health will be reduced if you get hit</h3>
+                <h3>The game will be over if you run out of Health</h3>
+                <button id="startButton" onclick="startGame()">Start Game</button>
+           </div>
+           <div class="end" id="end">
+                
+            <h2>Game Over</h2>
+            <h2>Your Score : <span id="endScore">0</span></h2>
+            <a href="" id="restartLink">Restart</a>
+            
+       </div>
+        </div>
+        <div class="spacediv" id="spacediv">
+            <div class="spaceship-way">
+                
+                <div class="health">
+                    <div class="healthback"></div>
+                    <div class="healthbar" id="healthbar"></div>
+                </div>
+                <h1 class="healthtext">Your Health</h1>
+                <img src="./Assets/clipart2908532.png" alt="" class="spaceship" id="spaceship">
+                <img src="./Assets/fire.gif" alt="" id="bullet">
+                <div class="score">
+                    <div class="scoreboard">
+                        <h3 >Score</h3>
+                        <h2 id="score">0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aliens">
+            <img src="./Assets/enemy1.png" alt="" id="enemy1" class="alien">
+            <img src="./Assets/x1.gif" alt="" id="x1" class="alienbullet">
+            <img src="./Assets/enemy2.png" alt="" id="enemy2" class="alien">
+            <img src="./Assets/x2.gif" alt="" id="x2" class="alienbullet">
+            <img src="./Assets/enemy3.png" alt="" id="enemy3" class="alien">
+            <img src="./Assets/x3.gif" alt="" id="x3" class="alienbullet">
+            <img src="./Assets/enemy4.png" alt="" id="enemy4" class="alien">
+            <img src="./Assets/x4.gif" alt="" id="x4" class="alienbullet">
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
